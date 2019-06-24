@@ -1,0 +1,24 @@
+ img
+{
+  background-size: cover; 
+  width: 99vw;
+  height: 75vh;
+  position: relative;
+}
+ 
+.container{
+ font-family: 'Cutive Mono', monospace; 
+display: flex;
+justify-content:center;
+flex-wrap: wrap;
+background-color:rgb(255, 255, 255);
+position: absolute;
+top:70%;
+left:7%;
+right:7%;
+}
+form{
+  width: 400px;
+}
+ 
+ 
