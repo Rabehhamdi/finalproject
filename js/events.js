@@ -13,7 +13,7 @@ window.onload =function addRow() {
     var div = document.createElement('div'); 
     div.innerHTML =   `  <div class="card" style="width: 30rem;">
             <div class="event-date">
-                <h1>`+datedebut+`</h1>
+                <h1 class="h1">`+datedebut+`</h1>
             </div>
             <img src="img/event2.jpg" class="card-img-top">
             <div class="card-body">
@@ -69,7 +69,12 @@ function myDescription() {
 }
 
 function myDateDebut() {
-    sessionStorage.setItem("datedebut", document.getElementById("datedebut").value)
+    var str = document.getElementById("datedebut").value
+    strYear = str.substring(0, 4)
+    var newstr = str.replace('2019-', '')
+    newstr2 = newstr.replace('-', '/')
+    date = newstr2 + '/' + strYear
+    sessionStorage.setItem("datedebut", date)
     
     return datedebut
 }

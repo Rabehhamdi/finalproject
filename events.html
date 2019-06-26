@@ -13,72 +13,126 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/search.css">
     <script src="js/events.js"></script>
+    <script src="js/index.js" async></script>
     
     <title>Document</title>
 </head>
 <body>
+        <header id="background2">
+                <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"/></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse top-fixed justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="events.html">EVENTS</a>
+                        <a class="nav-item nav-link" href="#">CAMPERVANS</a>
+                        <a class="nav-item nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-item nav-link" href="#">LOGIN</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="text-box">
+                    <h1 class="heading-title">
+                        <span class="heading-main-title">JOIN THE SQUAD <span class="heading-here">NOW</span></span>
+                        <span class="heading-sub-title">Search events</span>
+                    </h1>
+                </div>
+            </header>
+            <div class="search-bar">
+                <div class="card-search mb-3" style="width: 75%; max-width: 800px;">
+                    <form action="#">
+                        <div class="btn-group">
+                            <select class="form-control pickup-location" id="exampleFormControlSelect1">
+                                <option>Pickup Location</option>
+                                <option>Sousse</option>
+                                <option>Tunis</option>
+                                <option>Sfax</option>
+                                <option>Nabeul</option>
+                            </select>
+                        </div>
+                        <input class="datepicker" id="datepicker" width="150" placeholder="Pickup date"/>
+                        <div class="btn-group">
+                            <select class="form-control dropoff-location" id="exampleFormControlSelect1">
+                                <option>Dropoff Location</option>
+                                <option>Jebal Serej</option>
+                                <option>Jebal Ersass</option>
+                                <option>Hawaria</option>
+                                <option>Zaghouan</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-outline-warning btn-search">Search</button>
+                    </form>    
+                </div>
+            </div>
     <h1 class="clients-testimonials">Adventure</h1>
     <h1 class="clients-love">ROAD TRIPS</h1>
-    <div class="container events-container d-flex justify-content-around "style="display: flex; flex-wrap:wrap " id="ajoute">
-        <div class="card" style="width: 30rem;">
-            <div class="event-date">
-                <h1 class="h1">04 JUNE</h1>
+    <div class="search-container">
+        <div class="container events-container d-flex justify-content-around "style="display: flex; flex-wrap:wrap " id="ajoute">
+            <div class="card" style="width: 30rem;">
+                <div class="event-date">
+                    <h1 class="h1">06/07/2019</h1>
+                </div>
+                <img src="img/event1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <ul class="test">
+                        <li><img src="img/nej.png" class="profil-event-pic"></li>
+                        <li>
+                            <h5 class="card-title event-name">Yasmine</h5>
+                        </li>
+                        <br>
+                        <li class="from"><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <h6>Sousse</h6>
+                        </li>
+                        <li>
+                            <h6 style="font-weight: 100">to</h6>
+                        </li>
+                        <li class="destination"><i class="fas fa-map-marker fa-2x"></i>
+                            <h6>Jebal Ersass</h6>
+                        </li>
+                    </ul>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-warning">Read more</a>
+                </div>
             </div>
-            <img src="img/event1.jpg" class="card-img-top">
-            <div class="card-body">
-                <ul class="test">
-                    <li><img src="img/nej.png" class="profil-event-pic"></li>
-                    <li>
-                        <h5 class="card-title event-name">Yasmine</h5>
-                    </li>
-                     <br>
-                    <li class="from"><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <h6>Sousse</h6>
-                    </li>
-                    <li>
-                        <h6 style="font-weight: 100">to</h6>
-                    </li>
-                    <li class="destination"><i class="fas fa-map-marker fa-2x"></i>
-                        <h6>Jebal Ersass</h6>
-                    </li>
-                </ul>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <a href="#" class="btn btn-warning">Read more</a>
+            <div class="card" style="width: 30rem;">
+                <div class="event-date">
+                    <h1 class="h1">06/20/2019</h1>
+                </div>
+                <img src="img/event2.jpg" class="card-img-top">
+                <div class="card-body">
+                    <ul class="test">
+                        <li><img src="img/nej.png" class="profil-event-pic"></li>
+                        <li>
+                            <h5 class="card-title event-name">Mohamed</h5>
+                        </li>
+                        <br>
+                        <li class="from"><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <h6>Sousse</h6>
+                        </li>
+                        <li>
+                            <h6 style="font-weight: 100">to</h6>
+                        </li>
+                        <li class="destination"><i class="fas fa-map-marker fa-2x"></i>
+                            <h6>Jebal Ersass</h6>
+                        </li>
+                    </ul>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-warning">Read more</a>
+                </div>
             </div>
+        
         </div>
-        <div class="card" style="width: 30rem;">
-            <div class="event-date">
-                <h1>12 JUNE</h1>
-            </div>
-            <img src="img/event2.jpg" class="card-img-top">
-            <div class="card-body">
-                <ul class="test">
-                    <li><img src="img/nej.png" class="profil-event-pic"></li>
-                    <li>
-                        <h5 class="card-title event-name">Mohamed</h5>
-                    </li>
-                    <br>
-                    <li class="from"><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <h6>Sousse</h6>
-                    </li>
-                    <li>
-                        <h6 style="font-weight: 100">to</h6>
-                    </li>
-                    <li class="destination"><i class="fas fa-map-marker fa-2x"></i>
-                        <h6>Jebal Ersass</h6>
-                    </li>
-                </ul>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <a href="#" class="btn btn-warning">Read more</a>
-            </div>
-        </div>
-    
     </div>
      
     
@@ -132,12 +186,12 @@
                         </div>
                         <div class="form-group">
                             <label>date début</label>
-                            <input type="date" onchange="myDateDebut()" id="datedebut" name="bday" max="3000-12-31" min="1000-01-01"
+                            <input type="date" class="date2" onchange="myDateDebut()" id="datedebut" name="bday" max="3000-12-31" min="1000-01-01"
                                 class="form-control">
                         </div>
                         <div class="form-group">
                             <label>date fin</label>
-                            <input type="date" onchange="myDateFin()" id="datefin" name="bday" min="1000-01-01" max="3000-12-31"
+                            <input type="date" class="date2" onchange="myDateFin()" id="datefin" name="bday" min="1000-01-01" max="3000-12-31"
                                 class="form-control">
                         </div>
                         <div class="file-field">
@@ -190,7 +244,16 @@
             </div>
         </div>
     </footer>
-
+    <script>
+            $('#datepicker').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
+        </script>
+        <script type="text/javascript">
+            $('.date2').datepicker({
+               format: 'yyyy-mm-dd'
+             });
+         </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/eaac14fceb.js"></script>
-    <script src="src/index.js"></script>
+    <script src="js/index.js" async></script>
 
     <title>ROAM FREE CAMPERS</title>
 
@@ -26,8 +26,8 @@
             </button>
             <div class="collapse navbar-collapse top-fixed justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">EVENTS</a>
+                <a class="nav-item nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="events.html">EVENTS</a>
                 <a class="nav-item nav-link" href="#">CAMPERVANS</a>
                 <a class="nav-item nav-link" href="contact.html">CONTACT</a>
                 <a class="nav-item nav-link" href="#">LOGIN</a>
@@ -45,17 +45,17 @@
         <div class="card-search mb-3" style="width: 75%; max-width: 800px;">
             <form action="#">
                 <div class="btn-group">
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control pickup-location" id="exampleFormControlSelect1">
                         <option>Pickup Location</option>
-                        <option>Jebal Serej</option>
-                        <option>Jebal Ersass</option>
-                        <option>Hawaria</option>
-                        <option>Zaghouan</option>
+                        <option>Sousse</option>
+                        <option>Tunis</option>
+                        <option>Sfax</option>
+                        <option>Nabeul</option>
                     </select>
                 </div>
                 <input class="datepicker" id="datepicker" width="150" placeholder="Pickup date"/>
                 <div class="btn-group">
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control dropoff-location" id="exampleFormControlSelect1">
                         <option>Dropoff Location</option>
                         <option>Jebal Serej</option>
                         <option>Jebal Ersass</option>
@@ -63,7 +63,7 @@
                         <option>Zaghouan</option>
                     </select>
                 </div>
-                <button type="button" class="btn btn-outline-warning">Search</button>
+                <button type="button" class="btn btn-outline-warning" id="search-button">Search</button>
             </form>    
         </div>
     </div>
@@ -314,7 +314,7 @@
         
     </div>
     <div class="container button-container-event">
-        <button class="more-event-button">View All Events</button>
+        <a href="events.html"><button class="more-event-button">View All Events</button></a>
     </div>
     <footer>
         <div class="footer-container">
